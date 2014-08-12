@@ -1,0 +1,9 @@
+# MySQL 5.1
+root 
+Orion / 123456
+
+# apache-tomcat-7.0.42
+安装路径：/usr/share/apache-tomcat-7.0.42
+
+# SSH
+地址：动态
