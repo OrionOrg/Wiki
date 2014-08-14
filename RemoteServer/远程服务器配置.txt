@@ -1,9 +1,29 @@
 # MySQL 5.1
-root 
+端口：3306
+启动命令：service mysqld start
+root /
 Orion / 123456
+
+# PostgreSQL 8.4.20-1.el6_5
+端口：5432
+网络连接配置：/var/lib/pgsql/data/postgresql.conf
+用户访问控制配置：/var/lib/pgsql/data/pg_hba.conf
+重新读取pg_hba.conf文件：pg_ctl reload
+启动命令：service postgresql start
+postgres /
+ucsm / ucsm123456
 
 # apache-tomcat-7.0.42
 安装路径：/usr/share/apache-tomcat-7.0.42
+端口：8081
 
 # SSH
 地址：动态
+
+
+
+
+
+
+参考资料：PostgreSQL新手入门
+http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html
