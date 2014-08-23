@@ -37,6 +37,12 @@
             	<exclude name="src/*.*"/>
             </fileset>
         </copy>
+        <copy includeemptydirs="false" todir="${tomcat_WebApp_classes}">
+            <fileset dir="${appRepo_webserver_src}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+
     	<mkdir dir="${tomcat_WebApp_classes}"/>
     </target>
     <target name="clean">
