@@ -27,15 +27,23 @@ OrionOrg项目本地仓库：
 UCSM：/OrionOrg/UCSM
 =======================================================================
 
+=======================================================================
+定时任务：crontab -e
+-----------------------------------------------------------------------
+*/60 * * * * /Anthony/sendRemoteServerMessageByMail.sh
+* 5 * * * /Anthony/sendRemoteServerProjectBuildingMsgByMail.sh
+=======================================================================
+
 
 =======================================================================
 快捷设置
 -----------------------------------------------------------------------
 所在目录：/Anthony
-sendRemoteServerMessageByMail.sh  用于定时发送RemoteServer相关信息到指定的邮箱
-startupTomcat.sh  启动tomcat服务
-shutdownTomcat.sh 关闭tomcat服务
-softwareInstaller 该目录下保存了若干软件的安装程序
-project_UCSM 该目录下保存了UCSM项目有关的文件
-project_UCSM/build.xml  Ant脚本；用于将/OrionOrg/UCSM下的代码编译、发布到Tomcat目录下的webapp目录下。
+/AnthonysendRemoteServerMessageByMail.sh  用于定时发送RemoteServer相关信息到指定的邮箱
+/AnthonystartupTomcat.sh  启动tomcat服务
+/AnthonyshutdownTomcat.sh 关闭tomcat服务
+/AnthonysoftwareInstaller 该目录下保存了若干软件的安装程序
+/Anthonyproject_UCSM 该目录下保存了UCSM项目有关的文件
+/Anthonyproject_UCSM/build.xml  Ant脚本；用于将/OrionOrg/UCSM下的代码编译、发布到Tomcat目录下的webapp目录下。
+/Anthonyproject_UCSM/pullCodeAndBuildToTomcat.sh 用于从GitHub上pull /OrionOrg/UCSM下develop分支的最新代码，并build。
 =======================================================================
